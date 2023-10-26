@@ -21,8 +21,8 @@ const Footer = () => {
     return (
         <div className='footer'>
             <div className="links">
-                <a href="https://github.com/navneet-chugh"><GitHubIcon /></a>
-                <a href="https://www.linkedin.com/in/navneet-chugh-4ab456129/"><LinkedInIcon /></a>
+                <a href="https://github.com/Raja450"><GitHubIcon /></a>
+                <a href="https://www.linkedin.com/in/raja-sah-641087189/"><LinkedInIcon /></a>
                 <a href="mailto:navneetchugh15@gmail.com"><AttachEmailIcon /></a>
                 <a href="https://www.instagram.com/navneetchugh15/"><InstagramIcon /></a>
             </div>
