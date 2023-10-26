@@ -23,8 +23,7 @@ const Footer = () => {
             <div className="links">
                 <a href="https://github.com/Raja450"><GitHubIcon /></a>
                 <a href="https://www.linkedin.com/in/raja-sah-641087189/"><LinkedInIcon /></a>
-                <a href="mailto:navneetchugh15@gmail.com"><AttachEmailIcon /></a>
-                <a href="https://www.instagram.com/navneetchugh15/"><InstagramIcon /></a>
+                <a href="mailto:raja.sah290598@gmail.com"><AttachEmailIcon /></a>
             </div>
             <div className="themeButton">
                 <Select
