@@ -1,3 +1,4 @@
+import React from 'react'
 import {
     Chart as ChartJS,
     CategoryScale,
@@ -9,6 +10,7 @@ import {
     Legend,
 } from 'chart.js'
 import { Line } from 'react-chartjs-2'
+import {useTheme} from '../Context/ThemeContext'
 
 
 ChartJS.register(
@@ -21,22 +23,24 @@ ChartJS.register(
     Legend
 )
 
-// eslint-disable-next-line react/prop-types
-export default function Graph({ graphData = [] }) {
+const Graph = ({graphData}) => {
+
+    const theme = useTheme()
 
     return (
         <>
             <Line
                 data={
                     {
-                        labels: graphData.map((i) => i[0]),
+                        labels: graphData.map((i)=>i[0]),
                         datasets: [
                             {
-                                data: graphData.map(i => i[1]),
-                                label: 'WPM',
-                                borderColor: '#007BA7',
-                                color: '#007BA7'
-                            }
+                                data: graphData.map(i=>i[1]),
+                                label: 'wpm',
+                                borderColor: 'red',
+                                color :theme.textColor
+
+                            },   
                         ]
                     }
                 }
@@ -45,3 +49,4 @@ export default function Graph({ graphData = [] }) {
     )
 }
 
+export default Graph
